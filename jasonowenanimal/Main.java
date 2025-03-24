@@ -5,6 +5,7 @@ public class Main {
         // Create instances of Dog and Cat
         Animal dog = new Dog("Buddy");
         Animal cat = new Cat("Whiskers");
+        Animal lizard = new Lizard("Bruno");
 
         // Test Dog
         System.out.println("The dog " + dog.getName() + " says: " + dog.makeSound());
@@ -15,5 +16,10 @@ public class Main {
         System.out.println("\nThe cat " + cat.getName() + " says: " + cat.makeSound());
         System.out.println("It moves on " + cat.numberOfLegs() + " legs.");
         cat.move();
+
+        // Test Lizard
+        System.out.println("\nThe lizard " + lizard.getName() + " says: " + lizard.makeSound());
+        System.out.println("It moves on " + lizard.numberOfLegs() + " legs.");
+        lizard.move();
     }
 }
